@@ -1,0 +1,5 @@
+escape
+encodeURI
+encodeURIComponent
+escapeHTML
+decodeURIComponent

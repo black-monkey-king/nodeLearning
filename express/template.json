@@ -1,0 +1,343 @@
+{
+  "tpl": [
+    {
+      "id": "267057",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "height": 60,
+          "index": 0,
+          "color": "rgba(153,153,153,1)",
+          "activeColor": "rgba(0,102,204,1)",
+          "fontSize": 16,
+          "imgSize": 24,
+          "sourceData": [
+            {
+              "id": "1",
+              "title": "首页",
+              "link": "xxxxx",
+              "imgUrl": [
+                {
+                  "uid": "001",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/avatar_01_176dd7ab045.png"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "title": "制作",
+              "link": "xxxxx",
+              "imgUrl": [
+                {
+                  "uid": "002",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/05-%E5%9B%BE%E6%A0%87_176dd7c016f.png"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "title": "发现",
+              "link": "xxxxx",
+              "imgUrl": [
+                {
+                  "uid": "003",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/RichText@2x_176dd7bc338.png"
+                }
+              ]
+            },
+            {
+              "id": "4",
+              "title": "我的",
+              "link": "xxxxx",
+              "imgUrl": [
+                {
+                  "uid": "004",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/avatar_08_176dd7c6cff.png"
+                }
+              ]
+            }
+          ],
+          "bgColor": "rgba(245,244,244,1)"
+        },
+        "h": 30,
+        "type": "Nav",
+        "category": "base"
+      },
+      "point": { "i": "x-2", "x": 0, "y": 115, "w": 24, "h": 30, "isBounded": true },
+      "status": "inToCanvas"
+    },
+    {
+      "id": "629433",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "text": "通知栏: 趣谈前端上线啦",
+          "speed": 50,
+          "theme": "warning",
+          "isClose": false
+        },
+        "h": 20,
+        "type": "Notice",
+        "category": "base"
+      },
+      "point": {
+        "w": 24,
+        "h": 20,
+        "x": 0,
+        "y": 30,
+        "i": "629433",
+        "moved": false,
+        "static": false,
+        "isBounded": true
+      },
+      "status": "inToCanvas"
+    },
+    {
+      "id": "107253",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "gap": 0,
+          "round": 0,
+          "imgList": [
+            {
+              "id": "1",
+              "title": "01",
+              "imgUrl": [
+                {
+                  "uid": "001",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/1_1740bd7c3dc.png"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "title": "02",
+              "imgUrl": [
+                {
+                  "uid": "002",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "title": "03",
+              "imgUrl": [
+                {
+                  "uid": "003",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            }
+          ],
+          "sourcedata": { "field": "none" }
+        },
+        "h": 235,
+        "type": "ImgList",
+        "category": "base"
+      },
+      "point": {
+        "w": 24,
+        "h": 235,
+        "x": 0,
+        "y": 50,
+        "i": "107253",
+        "moved": false,
+        "static": false,
+        "isBounded": true
+      },
+      "status": "inToCanvas"
+    },
+    {
+      "id": "898200",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "gap": 0,
+          "round": 0,
+          "imgList": [
+            {
+              "id": "1",
+              "title": "01",
+              "imgUrl": [
+                {
+                  "uid": "001",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/1_1740bd7c3dc.png"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "title": "02",
+              "imgUrl": [
+                {
+                  "uid": "002",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "title": "03",
+              "imgUrl": [
+                {
+                  "uid": "003",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            }
+          ],
+          "sourcedata": { "field": "none" }
+        },
+        "h": 235,
+        "type": "ImgList",
+        "category": "base"
+      },
+      "point": {
+        "w": 24,
+        "h": 235,
+        "x": 0,
+        "y": 285,
+        "i": "898200",
+        "moved": false,
+        "static": false,
+        "isBounded": true
+      },
+      "status": "inToCanvas"
+    },
+    {
+      "id": "789597",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "gap": 0,
+          "round": 0,
+          "imgList": [
+            {
+              "id": "1",
+              "title": "01",
+              "imgUrl": [
+                {
+                  "uid": "001",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/1_1740bd7c3dc.png"
+                }
+              ]
+            },
+            {
+              "id": "2",
+              "title": "02",
+              "imgUrl": [
+                {
+                  "uid": "002",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "title": "03",
+              "imgUrl": [
+                {
+                  "uid": "003",
+                  "name": "image.png",
+                  "status": "done",
+                  "url": "http://h5.dooring.cn/uploads/2_1740bd8d525.png"
+                }
+              ]
+            }
+          ],
+          "sourcedata": { "field": "none" }
+        },
+        "h": 235,
+        "type": "ImgList",
+        "category": "base"
+      },
+      "point": {
+        "w": 24,
+        "h": 235,
+        "x": 0,
+        "y": 520,
+        "i": "789597",
+        "moved": false,
+        "static": false,
+        "isBounded": true
+      },
+      "status": "inToCanvas"
+    },
+    {
+      "id": "677659",
+      "item": {
+        "config": {
+          "cpName": "",
+          "id": "",
+          "bgColor": "rgba(245,245,245,1)",
+          "logo": [
+            {
+              "uid": "001",
+              "name": "image.png",
+              "status": "done",
+              "url": "http://cdn.dooring.cn/dr/logo.ff7fc6bb.png"
+            }
+          ],
+          "logoText": "",
+          "fontSize": 20,
+          "color": "rgba(47,84,235,1)",
+          "height": 50,
+          "fixTop": false,
+          "showMenuBtn": false,
+          "menuColor": "rgba(47,84,235,1)",
+          "menuList": [
+            { "id": "1", "title": "首页", "link": "/" },
+            { "id": "2", "title": "产品介绍", "link": "/" }
+          ],
+          "menuBgColor": "rgba(8,22,216,1)"
+        },
+        "h": 30,
+        "type": "Header",
+        "category": "base"
+      },
+      "point": {
+        "w": 24,
+        "h": 30,
+        "x": 0,
+        "y": 0,
+        "i": "677659",
+        "moved": false,
+        "static": false,
+        "isBounded": true
+      },
+      "status": "inToCanvas"
+    }
+  ],
+  "pageConfig": { "title": "未命名" }
+}

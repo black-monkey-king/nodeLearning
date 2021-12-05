@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p>post-html</p>
+  <form action="http://127.0.0.1:8000/form" method="post" target="stop">
+    <label for="name">名称</label>
+    <input type="text" name="name" id="name"">
+    
+    <label for="password" class="col-sm-2">密码</label>
+    <input type="password" name="password" id="password">
+    <input type="submit" value="submit">
+  </form>
+  <iframe  name="stop" style="display:none;"></iframe>  
+  <button onclick='send()'>发送get</button>
+  <button onclick='send1()'>get传参</button>
+  <button onclick='sendToken()'>post携带token</button>
+  <button onclick='sendToken1()'>post携带token-json</button>
+  <button onclick='sendToken2()'>post不携带token-json</button>
+</body>
+<script>
+
+  let getToken;
+  function send(){
+    let xhr = new XMLHttpRequest;
+    xhr.onreadystatechange = ()=>{
+      if (xhr.status === 200 && xhr.readyState == 4){
+        console.log(111)
+        let getdata = JSON.parse(xhr.response)
+        console.log(getdata)
+        getToken = getdata.token;
+      } 
+    }
+    xhr.open("GET", "http://localhost:8000/get")
+    xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    // 携带无效
+    xhr.send(JSON.stringify({name:'cccccccc'}))
+  }
+  function send1(){
+    let xhr = new XMLHttpRequest;
+    xhr.onreadystatechange = ()=>{
+      if (xhr.status === 200 && xhr.readyState == 4){
+        console.log(111)
+        let getdata = JSON.parse(xhr.response)
+        console.log(getdata)
+        getToken = getdata.token;
+      } 
+    }
+    xhr.open("GET", "http://localhost:8000/get?name=ccccc&age=100")
+    xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    xhr.send(JSON.stringify({name:'cccccccc'}))
+  }
+
+  function sendToken(){
+    let xhr = new XMLHttpRequest;
+    xhr.onreadystatechange = ()=>{
+      if (xhr.status === 200 && xhr.readyState == 4){
+        console.log(2222)
+        console.log(JSON.parse(xhr.response));
+      } 
+    }
+    xhr.open("POST", "http://localhost:8000/post")
+    xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    xhr.setRequestHeader("Authorization", getToken);
+    // 传参应该序列化，不然node中req.body中无法获取
+    let params = {
+      params:{
+        name:'cc',
+        age:100
+      },
+      token:getToken
+    };
+    // xhr.send(JSON.stringify(params))
+    xhr.send(params)
+  }
+
+  function sendToken1(){
+    let xhr = new XMLHttpRequest;
+    xhr.onreadystatechange = ()=>{
+      if (xhr.status === 200 && xhr.readyState == 4){
+        console.log(2222)
+        console.log(JSON.parse(xhr.response));
+      } 
+    }
+    xhr.open("POST", "http://localhost:8000/post-json")
+    xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    // xhr.setRequestHeader("Authorization", getToken);
+    // 通过传参携带token
+    let params = {
+      params:{
+        name:'cc',
+        age:100
+      },
+      token:getToken
+    };
+    xhr.send(JSON.stringify(params))
+  }
+
+  function sendToken2(){
+    let xhr = new XMLHttpRequest;
+    xhr.onreadystatechange = ()=>{
+      if (xhr.status === 200 && xhr.readyState == 4){
+        console.log(2222)
+        console.log(JSON.parse(xhr.response));
+      } 
+    }
+    xhr.open("POST", "http://localhost:8000/post-json")
+    xhr.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    // xhr.setRequestHeader("Authorization", getToken);
+    // 通过传参携带token
+    let params = {
+      params:{
+        name:'cc',
+        age:100
+      },
+      // token:getToken
+    };
+    xhr.send(JSON.stringify(params))
+  }
+</script>
+</html>

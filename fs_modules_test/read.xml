@@ -1,0 +1,4 @@
+const cc = 'read-js';
+function a (){
+  console.log(1111)
+}
