@@ -48,3 +48,14 @@ co(function* () {
   };
   console.log(res);
 }).catch();
+
+function* f() {
+  let list = [1,2,,43,4,45,555]
+  for(var i = 0; i<list.length; i++) {
+    let getVal = Promise.resolve(list[i]);
+    console.log('generatorStep',getVal)
+    var reset = yield getVal;
+  }
+}
+
+co(f)
